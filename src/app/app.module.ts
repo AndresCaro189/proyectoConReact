@@ -1,28 +1,20 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { AngularFireModule} from '@angular/fire';
-import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+import { AngularFireModule } from '@angular/fire';
 
-const firebaseConfig = {
-  apiKey: 'AIzaSyAReIfC3I0ovui0RoOUazbD87XDv2-_9TA',
-  authDomain: 'sofkachat-team-5ee74.firebaseapp.com',
-  projectId: 'sofkachat-team-5ee74',
-  storageBucket: 'sofkachat-team-5ee74.appspot.com',
-  messagingSenderId: '82160573604',
-  appId: '1:82160573604:web:cdd3dfd08356851b9b9a31'
-};
+import { AppComponent } from './app.component';
+import { environment } from '../environments/environment';
+import { ChatroomComponent } from './chatroom/chatroom.component';
+import { from } from 'rxjs';
+
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
   imports: [
     BrowserModule,
     FormsModule,
-    //HttpModule,
-    AngularFireModule.initializeApp(firebaseConfig)
+    AngularFireModule.initializeApp(environment.firebase)
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  declarations: [ AppComponent, ChatroomComponent ],
+  bootstrap: [ AppComponent ]
 })
-export class AppModule { }
+export class AppModule {}
