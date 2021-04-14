@@ -1,10 +1,15 @@
+
+<div class="chatRoomClass">
 <ul>
     <li *ngFor="let item of items | async">
-
-        <img src='{{ item.photoURL }}' alt='avatar'>
-        {{ item.displayName }}
-        {{ item.text }}
+        <img class="imgUser" src='{{ item.photoURL }}' alt='avatar'>
+        <p>{{ item.text }}</p>
+        <p>{{ item.displayName }} </p>
     </li>
 </ul>
-<input type='text' placeholder='Ingresar algo aqui' [(ngModel)]='formValue' />
-<button (click)='sendMessage()' [disabled]='!formValue'>Send</button>
+<div class="chatRoomInput">
+    <input class="chatRoomInputbox" type='text' placeholder='Ingresar algo aqui' [(ngModel)]='formValue' />
+    <button class="chatRoomInputmsg" (click)='sendMessage()' [disabled]='!formValue'>Send</button>
+</div>
+</div>
+

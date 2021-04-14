@@ -1,0 +1,51 @@
+.chatRoomClass{
+    margin: 0 auto;
+    width: 500px;
+    background-color:rgba(253, 9, 9, 0.438);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    word-wrap: break-word;
+    align-items: center;
+}
+
+li{
+    margin-left:10px ;
+    justify-content: space-between;
+    color: white;
+    column-count:3;
+}
+
+.imgUser{
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%;
+}
+
+.textChatMessage{
+    display: flex;
+    flex-direction: column;
+}
+
+.chatRoomInput{
+    width: 500px;
+    background-color:rgba(11, 216, 252, 0.438);
+}
+
+.chatRoomInputbox{
+    width: 60%;
+    padding: 20px;
+    margin-right:20px ;
+    border-radius: 7px;
+}
+
+.chatRoomInputmsg{
+        text-decoration: none;
+        color: white;
+        background-color:rgba(9, 253, 103, 0.438);
+        padding: 20px;
+        border: none;
+        border-radius: 7px;
+        box-shadow: 1px 2px 5px 1px black;
+}

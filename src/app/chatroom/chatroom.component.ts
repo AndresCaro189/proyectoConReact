@@ -9,6 +9,7 @@ import { Observable } from 'rxjs';
   templateUrl: './chatroom.component.html',
   styleUrls: ['./chatroom.component.css']
 })
+
 export class ChatroomComponent  {
 
   items: Observable<any[]>;
